@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Какой-то бренд</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/images.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="header_title">
+        <img class="icon" src="img/icon.png" />
+        <div class="title">
+          <h1>Какой-то бренд</h1>
+          <p>Всякие приколы тут!</p>
+        </div>
+      </div>
+      <img
+        onclick="return openit()"
+        id="open"
+        class="navlink open"
+        src="img/menu_FILL0_wght400_GRAD0_opsz48.png"
+      />
+      <nav id="nav" class="navbar">
+        <div class="navlinks">
+          <img
+            onclick="return closeit()"
+            id="close"
+            class="navlink close"
+            src="img/close_FILL0_wght400_GRAD0_opsz48.png"
+          />
+          <img class="navlink" src="img/home_FILL1_wght700_GRAD0_opsz48.png" />
+          <img
+            class="navlink"
+            src="img/shopping_cart_FILL1_wght700_GRAD0_opsz48.png"
+          />
+          <img
+            class="navlink"
+            src="img/favorite_FILL1_wght700_GRAD0_opsz48.png"
+          />
+        </div>
+        <div class="cart">
+          <div class="line"></div>
+          <span>1080₽</span>
+          <span>3</span>
+        </div>
+      </nav>
+    </div>
+    <div class="wrapper">
+      <div class="wrapper_info">
+        <h1>
+          Подарки родным и близким, антистрессы и всякие приколы вы можете найти
+          тут!
+        </h1>
+        <button>Ассортимент</button>
+      </div>
+
+      <div class="images">
+        <div class="slide" style="background-image: url('img/car.jpg')"></div>
+
+        <div class="slide" style="background-image: url('img/car2.jpg')"></div>
+
+        <div class="slide" style="background-image: url('img/car3.jpg')"></div>
+
+        <div class="slides2">
+          <div
+            class="slide2"
+            style="background-image: url('img/car.jpg')"
+          ></div>
+
+          <div
+            class="slide2"
+            style="background-image: url('img/car2.jpg')"
+          ></div>
+
+          <div
+            class="slide2"
+            style="background-image: url('img/car3.jpg')"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <div class="bottomlinks">
+      <a class="bottomlink" href="#">Пользовательское соглашение</a>
+      <a class="bottomlink" href="#">Бла-бла-бла</a>
+      <a class="bottomlink" href="#">Ещё что-то</a>
+    </div>
+    <script src="script.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
